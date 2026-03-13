@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- OPENING AMPOP -->
+<div id="opening">
+  <div class="envelope" onclick="bukaUndangan()">
+    <div class="flap"></div>
+    <div class="letter">
+      <p>Kepada Yth.</p>
+      <h3 id="namaTamu">Tamu Undangan</h3>
+      <p>Buka Undangan</p>
+    </div>
+  </div>
+  </div>
+</div> 
+
+<!-- MUSIK -->
+<audio id="musik" loop>
+  <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+<!-- COVER -->
+<div id="cover" class="section">
+  <img src="cover.png" class="img">
+</div>
+
+<!-- MEMPELAI -->
+<div id="mempelai" class="section">
+  <img src="mempelai.png" class="img">
+</div>
+
+<!-- ACARA -->
+<div id="acara" class="section">
+  <img src="acara.png" class="img">
+  <div class="countdown">
+    <h3>Akad</h3>
+    <div class="timer">
+      <div class="box"><span id="a_hari"></span><p>Hari</p></div>
+      <div class="box"><span id="a_jam"></span><p>Jam</p></div>
+      <div class="box"><span id="a_menit"></span><p>Menit</p></div>
+      <div class="box"><span id="a_detik"></span><p>Detik</p></div>
+    </div>
+    <h3>Resepsi</h3>
+    <div class="timer">
+      <div class="box"><span id="r_hari"></span><p>Hari</p></div>
+      <div class="box"><span id="r_jam"></span><p>Jam</p></div>
+      <div class="box"><span id="r_menit"></span><p>Menit</p></div>
+      <div class="box"><span id="r_detik"></span><p>Detik</p></div>
+    </div>
+    <a href="https://maps.app.goo.gl/LMfnvuLjdrK7us258?g_st=aw" class="maps">Lokasi Akad</a>
+    <a href="https://goo.gl/maps/Q5rPbkQdiZEBWaku7?g_st=aw" class="maps">Lokasi Resepsi</a>
+  </div>
+</div>
+
+<!-- KISAH -->
+<div id="kisah" class="section">
+  <img src="kisah1.png" class="img">
+  <img src="kisah2.png" class="img">
+</div>
+
+<!-- UCAPAN -->
+<div id="ucapan" class="section">
+  <h2>Ucapan & Doa</h2>
+  <form id="formUcapan">
+    <input type="text" placeholder="Nama Lengkap" required>
+    <select required>
+      <option value="">Kehadiran</option>
+      <option>Hadir</option>
+      <option>Tidak Hadir</option>
+    </select>
+    <textarea placeholder="Ucapan & doa"></textarea>
+    <button>Kirim</button>
+  </form>
+  <div id="listUcapan"></div>
+</div>
+
+<!-- AMPL0P HADIAH -->
+<div id="penutup" class="section">
+  <div class="Tulisan">
+    <p>Doa restu Bapak/Ibu/Saudara/i sekalian merupakan karunia bagi kami. Jika memberi merupakan ungkapan tanda kasih, Bapak/Ibu/Saudara/i dapat mengirimkan melalui:</p>
+  </div>
+  <div class="gift">
+    <h2>Amplop Digital</h2>
+    <div class="card">
+      <p>Bank Mandiri</p>
+      <p id="rekening">1770021830507</p>
+      <p>a.n Anisa Rahmawati</p>
+      <button onclick="copyRek()">Salin Rekening</button>
+      <p>Rumah Mempelai Wanita</p>
+      <p id="alamat">Gg. Tugu Sari, Tugujaya, Kec. Cihideung, Kab. Tasikmalaya, Jawa Barat 46126</p>
+      <p>a.n Anisa Rahmawati</p>
+      <button onclick="copyAlamat()">Salin Alamat</button>
+    </div>
+  </div>
+  <img src="hadiah.png" class="img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
